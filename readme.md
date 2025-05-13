@@ -108,6 +108,4 @@ pnpm lint
 └── README.md             # You’re here!
 ```
 
-## 📜 License
-
-MIT License © Vedant Kesarwani
+Made with ❤️ by [Vedant](https://github.com/InventedSarawak)
