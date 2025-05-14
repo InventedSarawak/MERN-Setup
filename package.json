@@ -1,7 +1,7 @@
 {
-    "name": "fleetflow",
-    "version": "2.0.0",
-    "description": "Fleetflow: A fleet management platform",
+    "name": "app",
+    "version": "1.0.0",
+    "description": "app",
     "main": "index.js",
     "scripts": {
         "dev": "concurrently \"cd backend && pnpm dev\" \"cd frontend && pnpm dev\"",
@@ -10,7 +10,8 @@
         "format": "prettier --write .",
         "lint": "concurrently \"cd backend && pnpm lint\" \"cd frontend && pnpm lint\"",
         "lint:fix": "concurrently \"cd backend && pnpm lint:fix\" \"cd frontend && pnpm lint:fix\"",
-        "install": "concurrently \"cd backend && pnpm install\" \"cd frontend && pnpm install\""
+        "install": "concurrently \"cd backend && pnpm install\" \"cd frontend && pnpm install\"",
+        "test": "cd backend && pnpm test"
     },
     "keywords": [],
     "author": "",

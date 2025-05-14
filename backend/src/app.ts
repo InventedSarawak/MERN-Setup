@@ -2,7 +2,7 @@ import express from 'express'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
 
-import { swaggerUi, swaggerSpec } from './config/swagger'
+import { swaggerUi, swaggerSpec } from './config/swagger.config'
 import testRoutes from './routes/test.routes'
 
 const app = express()

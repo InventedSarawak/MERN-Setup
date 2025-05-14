@@ -1,3 +1,3 @@
-export const DB_NAME = 'fleetflow'
-export const APP_NAME = 'FleetFlow'
-export const APP_VERSION = '2.0.0'
+export const DB_NAME = 'DB_NAME'
+export const APP_NAME = 'APP_NAME'
+export const APP_VERSION = 'APP_VERSION'

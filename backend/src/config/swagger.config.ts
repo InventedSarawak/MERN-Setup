@@ -11,9 +11,9 @@ const options = {
     definition: {
         openapi: '3.0.0',
         info: {
-            title: 'Fleetflow APIs',
+            title: 'Backend APIs',
             version: '2.0.0',
-            description: 'API Routes for Fleetflow'
+            description: 'API Routes'
         },
         tags: [
             {

@@ -1,6 +1,7 @@
-import { v2 as cloudinary } from 'cloudinary'
 import path from 'node:path'
 import fs from 'node:fs'
+
+import { v2 as cloudinary } from 'cloudinary'
 import dotenv from 'dotenv'
 
 dotenv.config()
@@ -23,7 +24,7 @@ const uploadOnCloudinary = async (localFilePath: string) => {
         return response
     } catch (error) {
         console.error('Error uploading file:', error)
-        fs.unlink(localFilePath, (unlinkError) => console.error('Error deleting file:', unlinkError))
+        fs.unlink(localFilePath, unlinkError => console.error('Error deleting file:', unlinkError))
         return null
     }
 }
@@ -38,10 +39,10 @@ const deleteFileExceptKeep = () => {
             return
         }
 
-        files.forEach((file) => {
+        files.forEach(file => {
             if (file !== fileToKeep) {
                 const filePath = path.join(folderPath, file)
-                fs.unlink(filePath, (unlinkErr) => {
+                fs.unlink(filePath, unlinkErr => {
                     if (unlinkErr) {
                         console.error('Error deleting file:', unlinkErr)
                     } else {
@@ -52,6 +53,5 @@ const deleteFileExceptKeep = () => {
         })
     })
 }
-
 
 export { uploadOnCloudinary, deleteFileExceptKeep }
