@@ -94,6 +94,7 @@ pnpm lint
 │   │   ├── models/
 │   │   ├── routes/
 │   │   ├── services/
+│   │   ├── tests/
 │   │   └── utils/
 ├── frontend/             # React frontend
 │   ├── src/
